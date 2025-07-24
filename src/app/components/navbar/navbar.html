@@ -1,0 +1,15 @@
+<nav class="navbar">
+  <div class="logo">
+    <img src="assets/logo-proun.png" alt="PROUN logo" />
+  </div>
+  <ul>
+    <li><a routerLink="/">Inicio</a></li>
+    <li><a routerLink="/nosotros">Nosotros</a></li>
+    <li><a routerLink="/portafolios">Portafolios</a></li>
+    <li>
+      <button class="btn-ingresar" [routerLink]="botonRuta">
+        {{ botonTexto }}
+      </button>
+    </li>
+  </ul>
+</nav>

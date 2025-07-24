@@ -1,0 +1,26 @@
+<div class="registro-wrapper">
+  <div class="registro-left">
+    <h2>Crear Cuenta</h2>
+    <form (ngSubmit)="registrar()" #form="ngForm">
+      <input
+        type="email"
+        [(ngModel)]="usuario.email"
+        name="email"
+        placeholder="Email"
+        required
+      />
+      <input
+        type="password"
+        [(ngModel)]="usuario.contrasenia"
+        name="contraseña"
+        placeholder="Contraseña"
+        required
+      />
+      <button type="submit">¡Empecemos!</button>
+    </form>
+  </div>
+
+  <div class="registro-right">
+    <img src="assets/walking.png" alt="Logo" />
+  </div>
+</div>
